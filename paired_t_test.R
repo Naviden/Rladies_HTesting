@@ -27,3 +27,5 @@ after = c(12.0, 12.2, 11.2, 13.0, 15.0, 15.8, 12.2, 13.4, 12.9, 11.0)
 
 # Notice the alt = 'greater' argument
 t.test (before, after, paired = TRUE, alt = "greater")
+
+# finish
