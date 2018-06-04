@@ -1,4 +1,5 @@
 library(dplyr)
+library(lsr) # cohen's d
 movies = read.csv('movie_rating.csv')
 
 # all genres: 'Documentary','Short','Animation','Comedy','Romance', 'Sport','News',
@@ -24,4 +25,4 @@ mean(s_drama$averageRating)
 
 t.test(s_drama$averageRating,s_animation$averageRating)
 t.test(s_documentary$averageRating,s_animation$averageRating, var.equal = FALSE)
-
+cohensD(s_documentary$averageRating,s_animation$averageRating)
