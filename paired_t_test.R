@@ -13,7 +13,7 @@ after = c(12.7, 13.6, 12.0, 15.2, 16.8, 20.0, 12.0, 15.9, 16.0, 11.1)
 # Notice the paired = TRUE argument we put in the function
 # At this point we are just Intrested to see if the course has any impact at all
 # so we don't care if the impact is positive or negative
-t.test(a,b, paired=TRUE)
+t.test(before, after, paired=TRUE)
 
 
 
